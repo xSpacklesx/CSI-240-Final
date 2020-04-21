@@ -1,7 +1,8 @@
 #include "menu.h"
+#include "functions.h"
 #include <iostream>
 
-void printMenu()
+void printMainMenu()
 {
 	int userChoice = NULL;
 	std::cout << "1. Create A New Character" << std::endl;
@@ -19,10 +20,11 @@ void printMenu()
 
 void menuSwitch(int userChoice)
 {
-	std::cout << "in the menuSwitch" << std::endl;
+	//std::cout << "in the menuSwitch" << std::endl;
 	switch (userChoice) {
 		case 1 :
 			std::cout << "you chose " << userChoice << std::endl;
+			createCharacter();
 			break;
 		case 2 :
 			std::cout << "you chose " << userChoice << std::endl;
@@ -46,4 +48,20 @@ void menuSwitch(int userChoice)
 			std::cout << "you chose " << userChoice << std::endl;
 			break;
 	}
+}
+
+void printRaceMenu()
+{
+	std::cout << "1. Human" << std::endl;
+	std::cout << "2. Dwarf" << std::endl;
+	std::cout << "3. Elf" << std::endl;
+	std::cout << "4. Dragonborn" << std::endl;
+}
+
+void printClassMenu()
+{
+	std::cout << "1. Fighter" << std::endl;
+	std::cout << "2. Cleric" << std::endl;
+	std::cout << "3. Wizard" << std::endl;
+	std::cout << "4. Sorcerer" << std::endl;
 }

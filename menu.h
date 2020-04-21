@@ -2,8 +2,9 @@
 #ifndef MENU_H
 #define MENU_H
 
-void printMenu();
+void printMainMenu();
 void menuSwitch(int userChoice);
-
+void printRaceMenu();
+void printClassMenu();
 
 #endif // !MENU_H
