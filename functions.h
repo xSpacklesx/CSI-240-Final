@@ -4,6 +4,7 @@
 #include "character.h"
 
 void createCharacter();
+void compareLevels();
 
 
 

@@ -30,3 +30,14 @@ void createCharacter()
 	//add to party
 	printMainMenu();
 }
+
+void compareLevels()
+{
+	std::string name1, name2;
+	std::cout << "First character to compare: ";
+	std::cin >> name1;
+	std::cout << endl;
+	std::cout << "Second character to compare: ";
+	std::cin >> name2;
+	std::cout << endl;
+}

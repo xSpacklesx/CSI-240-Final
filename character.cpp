@@ -44,6 +44,21 @@ std::string Character::getClass() const
 	}
 }
 
+bool Character::operator==(const Character & rhs)
+{
+	return(level == rhs.level);
+}
+
+bool Character::operator=<(const Character & rhs)
+{
+	return(level =< rhs.level);
+}
+
+bool Character::operator=>(const Character & rhs)
+{
+	return(level => rhs.level);
+}
+
 Character::Character()
 {
 }

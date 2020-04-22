@@ -24,6 +24,11 @@ public:
 	void setClass(int chClass) { this->chClass = chClass; }
 	void setLevel(int level) { this->level = level; }
 
+	//overload
+	bool operator==(const Character &rhs);
+	bool operator=<(const Character &rhs);
+	bool operator=>(const Character &rhs);
+
 	//constructors
 	Character();
 	Character(std::string name);

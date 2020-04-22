@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+#include <vector>
 #include "menu.h"
 using namespace std;
 

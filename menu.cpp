@@ -12,7 +12,8 @@ void printMainMenu()
 	std::cout << "5. Add Item From File" << std::endl;
 	std::cout << "6. Output Character Sheet" << std::endl;
 	std::cout << "7. View Party" << std::endl;
-	std::cout << "8. Quit" << std::endl;
+	std::cout << "8. Compare Levels" << std::endl;
+	std::cout << "9. Quit" << std::endl;
 	std::cout << "Input the number of your choice." << std::endl;
 	std::cin >> userChoice;
 	menuSwitch(userChoice);
@@ -45,6 +46,10 @@ void menuSwitch(int userChoice)
 			std::cout << "you chose " << userChoice << std::endl;
 			break;
 		case 8 :
+			std::cout << "you chose " << userChoice << std::endl;
+			compareLevels();
+			break;
+		case 9 :
 			std::cout << "you chose " << userChoice << std::endl;
 			break;
 	}
