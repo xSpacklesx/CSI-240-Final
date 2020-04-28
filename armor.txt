@@ -1,0 +1,3 @@
+2,plate,25,4
+2,leather,15,3
+2,chainmail,45,7

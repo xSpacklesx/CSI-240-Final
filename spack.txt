@@ -1,0 +1,9 @@
+spack
+9
+3
+4
+leather,15,3, Type: Armor 
+sword,10,5, Type: Weapon 
+Potion of healing,15 ,heals you, Type: Potion 
+none,0 ,none, Type: Potion 
+Potion of invisibility,35 ,makes you invisible, Type: Potion 

@@ -1,8 +1,15 @@
-// CSI240FinalHSpack.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
+/**
+* @file CSI240FinalHSpack.cpp (main)
+* @brief  Start of my programming
+* Certification of Authenticity: I certify that this assignment is entirely my own work.
+* @author Hunter Spack
+* @assignment Final
+* @date 04/27/2020
+*
+*/
 #include <iostream>
 #include <vector>
+#include "item.h"
 #include "menu.h"
 using namespace std;
 

@@ -1,3 +1,12 @@
+/**
+* @file character.cpp
+* @brief  Definitions of functions, constructors, and destructors for the character class
+* Certification of Authenticity: I certify that this assignment is entirely my own work.
+* @author Hunter Spack
+* @assignment Final
+* @date 04/27/2020
+*
+*/
 #include "character.h"
 
 std::string Character::getRace() const
@@ -22,52 +31,27 @@ std::string Character::getRace() const
 	}
 }
 
-std::string Character::getClass() const
-{
-	switch (chClass)
-	{
-	case 1:
-		return " Fighter ";
-		break;
-	case 2:
-		return " Cleric ";
-		break;
-	case 3:
-		return " Wizard ";
-		break;
-	case 4:
-		return " Sorcerer ";
-		break;
-	default:
-		return "error no class";
-		break;
-	}
-}
-
 bool Character::operator==(const Character & rhs)
 {
 	return(level == rhs.level);
 }
 
-bool Character::operator=<(const Character & rhs)
+bool Character::operator<(const Character & rhs)
 {
-	return(level =< rhs.level);
+	return(level < rhs.level);
 }
 
-bool Character::operator=>(const Character & rhs)
+bool Character::operator>(const Character & rhs)
 {
-	return(level => rhs.level);
+	return(level > rhs.level);
 }
 
 Character::Character()
 {
 }
 
-Character::Character(std::string name)
-{
-}
 
-Character::Character(std::string name, int race, int chClass, int level)
+Character::Character(std::string name, int race, int level): name{name}, race{race}, level{level}
 {
 }
 

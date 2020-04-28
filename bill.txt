@@ -1,0 +1,9 @@
+bill
+5
+4
+2
+none,0,0, Type: Armor 
+axe,15,4, Type: Weapon 
+none,0 ,none, Type: Potion 
+Potion ofpoison,25 ,hurts you, Type: Potion 
+none,0 ,none, Type: Potion 

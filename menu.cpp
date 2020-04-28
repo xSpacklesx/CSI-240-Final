@@ -1,3 +1,12 @@
+/**
+* @file menu.cpp
+* @brief  Definitions of functions for menus
+* Certification of Authenticity: I certify that this assignment is entirely my own work.
+* @author Hunter Spack
+* @assignment Final
+* @date 04/27/2020
+*
+*/
 #include "menu.h"
 #include "functions.h"
 #include <iostream>
@@ -6,14 +15,9 @@ void printMainMenu()
 {
 	int userChoice = NULL;
 	std::cout << "1. Create A New Character" << std::endl;
-	std::cout << "2. Load A Character From File" << std::endl;
-	std::cout << "3. Edit A Character" << std::endl;
-	std::cout << "4. Create Item" << std::endl;
-	std::cout << "5. Add Item From File" << std::endl;
-	std::cout << "6. Output Character Sheet" << std::endl;
-	std::cout << "7. View Party" << std::endl;
-	std::cout << "8. Compare Levels" << std::endl;
-	std::cout << "9. Quit" << std::endl;
+	std::cout << "2. Create an NPC" << std::endl;
+	std::cout << "3. Compare two player levels" << std::endl;
+	std::cout << "4. Quit" << std::endl;
 	std::cout << "Input the number of your choice." << std::endl;
 	std::cin >> userChoice;
 	menuSwitch(userChoice);
@@ -29,28 +33,17 @@ void menuSwitch(int userChoice)
 			break;
 		case 2 :
 			std::cout << "you chose " << userChoice << std::endl;
+			createNpc();
 			break;
 		case 3 :
 			std::cout << "you chose " << userChoice << std::endl;
-			break;
-		case 4 :
-			std::cout << "you chose " << userChoice << std::endl;
-			break;
-		case 5 :
-			std::cout << "you chose " << userChoice << std::endl;
-			break;
-		case 6 :
-			std::cout << "you chose " << userChoice << std::endl;
-			break;
-		case 7 :
-			std::cout << "you chose " << userChoice << std::endl;
-			break;
-		case 8 :
-			std::cout << "you chose " << userChoice << std::endl;
 			compareLevels();
 			break;
-		case 9 :
-			std::cout << "you chose " << userChoice << std::endl;
+		case 4 :
+			std::cout << "you chose " << "Quit \nHave a nice day" << std::endl;
+			break;
+		default :
+			std::cout << "Error" << std::endl;
 			break;
 	}
 }
